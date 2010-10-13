@@ -65,4 +65,4 @@ export EDITOR="emacs -nw -q"
 
 # fix(?) for error on running test-server, rinari-launch-test, ...
 export RUBYLIB=".:test:$RUBYLIB"
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"

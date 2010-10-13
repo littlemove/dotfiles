@@ -9,9 +9,14 @@ alias lc='ssh loki@simplelogica.dyndns.org'
 alias mc='ssh mario@simplelogica.dyndns.org'
 alias b='ssh barman@barracuda'
 
-#alias ctags="ctags-exuberant -a -e -f TAGS --tag-relative -R app lib vendor"
-
-alias mysql=/usr/local/mysql/bin/mysql
-alias mysqladmin=/usr/local/mysql/bin/mysql
-
 alias mr='mate app/ config/ lib/ vendor/plugins/ public/javascripts/ public/stylesheets db/ test/ spec/'
+
+# Rails' related (provided you're on a Rails project folder)
+alias dc='script/dbconsole'
+alias l='tail -f log/development.log'
+alias lt='tail -f log/test.log'
+
+#function foo() { /path/to/command "$@" ;}
+
+function c() { script/console "$@" ;}
+function spec() { script/spec "$@" ;}
