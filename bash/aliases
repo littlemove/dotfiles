@@ -3,7 +3,6 @@ alias la='ls -A'
 alias l='ls -CF'
 alias ls='ls -G'
 
-
 # machine alias
 alias lc='ssh loki@simplelogica.dyndns.org'
 alias mc='ssh mario@simplelogica.dyndns.org'
@@ -15,8 +14,3 @@ alias mr='mate app/ config/ lib/ vendor/plugins/ public/javascripts/ public/styl
 alias dc='script/dbconsole'
 alias l='tail -f log/development.log'
 alias lt='tail -f log/test.log'
-
-#function foo() { /path/to/command "$@" ;}
-
-function c() { script/console "$@" ;}
-function spec() { script/spec "$@" ;}
