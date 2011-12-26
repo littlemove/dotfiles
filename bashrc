@@ -1,3 +1,6 @@
+source ~/.bash/aliases
+source ~/.bash/completions
+
 export TERM=xterm-color
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
 
@@ -66,3 +69,5 @@ export EDITOR="emacs -nw -q"
 # fix(?) for error on running test-server, rinari-launch-test, ...
 export RUBYLIB=".:test:$RUBYLIB"
 export PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
