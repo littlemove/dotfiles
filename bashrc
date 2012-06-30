@@ -45,10 +45,10 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-export EDITOR="emacs -nw -q"
+export EDITOR="emacsclient"
 
 # fix(?) for error on running test-server, rinari-launch-test, ...
-export RUBYLIB=".:test:$RUBYLIB"
-export PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+#export RUBYLIB=".:test:$RUBYLIB"
+#export PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
