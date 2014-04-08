@@ -29,12 +29,14 @@ ZSH_THEME="simple"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-export PATH=$HOME/.rbenv/shims:$HOME/.rbenv/bin:/usr/local/bin:/usr/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/opt/local/bin:/opt/local/sbin
-eval "$(rbenv init - zsh)"
-
-plugins=(git brew osx)
+plugins=(git brew osx capistrano)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 BUNDLER_EDITOR='emacsclient'
+
+export SHELL=/usr/local/bin/zsh
+
+export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/opt/local/bin:/opt/local/sbin
+eval "$(rbenv init -)"
